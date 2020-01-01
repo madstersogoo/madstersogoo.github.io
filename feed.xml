@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Rss feed</title>
+    <link>https://madstersogoo.github.io/</link>
+    <description />
+    <language>fr</language>
+    <item>
+      <title>test</title>
+      <pubDate>Wed, 1 Jan 2020 05:34:29 +0100</pubDate>
+      <description><![CDATA[test]]></description>
+    </item>
+  </channel>
+</rss>
