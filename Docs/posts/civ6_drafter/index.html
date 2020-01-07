@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		
+
+		<title>Civ6_Drafter</title>
+
+		
+		<link rel="stylesheet" href="https://madstersogoo.github.io/css/colors-gray.min.7111eb4b7174d098eb1fb9eef218fe3c08ead9091a82298392a96964b3008a36.css">
+
+		
+	</head>
+	<body>
+		<header id="header">
+			<h1><a href="https://madstersogoo.github.io">Madstersogood_Blog</a></h1>
+			<p>I use arch btw.</p>
+		</header>
+
+		<div id="page">
+			<div id="sidebar">
+				<nav>
+	
+		<ul class="nav">
+			
+				<li><a href="/index.xml"><span>Feed</span></a></li>
+			
+				<li><a rel="me" href="https://mastodon.social/about"><span>Mastodon</span></a></li>
+			
+				<li><a href="https://github.com/madstersogoo"><span>Repository</span></a></li>
+			
+		</ul>
+	
+</nav>
+
+			</div>
+
+			<div id="content">
+				
+	<article class="post">
+		<h1><a href="https://madstersogoo.github.io/posts/civ6_drafter/">Civ6_Drafter</a> </h1>
+
+		<div class="post-content"><h2 id="prsentation-du-projets-comment-lutiliser-et-modifier-son-code">Présentation du Projets, Comment l'utiliser et modifier son code.</h2>
+<p>Civ6_Drafter est un programme écrit en pyhton qui a pour but de faciliter la phase de draft.</p>
+<h3 id="civilization-possible">Civilization possible.</h3>
+<p>pour rajouter des Civilizations pour les extensions il faut les rajouter a la liste_civ.</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">liste_civ <span style="color:#719e07">=</span> [<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">American</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Arabian</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Aztec</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Brazilian</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Chinese</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Egyptian</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">English</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">French</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">German</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Greek</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Indian</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Japanese</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Kongolese</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Norwegian</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Roman</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Russian</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Scythian</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Spanish</span><span style="color:#2aa198">&#34;</span>,<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">Sumerian</span><span style="color:#2aa198">&#34;</span>]</code></pre></div>
+<p>Il faut ensuite rajouter un module de ban qui correspond a la civilization</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#719e07">def</span> <span style="color:#268bd2">addban1</span>(buttonframe):
+    ban<span style="color:#719e07">.</span>append(<span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">American</span><span style="color:#2aa198">&#34;</span>)</code></pre></div>
+<p>Pour terminer if faut rajouter le bouton qui correspond ainsi que définir sa position dans la grid.</p>
+<p>je conseil de les mettres a la suite par ligne de 9 boutons.</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">    button1<span style="color:#719e07">=</span>Button(buttonframe,text<span style="color:#719e07">=</span><span style="color:#2aa198"></span><span style="color:#2aa198">&#34;</span><span style="color:#2aa198">American</span><span style="color:#2aa198">&#34;</span>, command<span style="color:#719e07">=</span>addban1)
+    button1<span style="color:#719e07">.</span>grid(row<span style="color:#719e07">=</span><span style="color:#2aa198">0</span>,column<span style="color:#719e07">=</span><span style="color:#2aa198">0</span>)</code></pre></div>
+<h3 id="prsentation-du-code">Présentation du code.</h3>
+<p>Voici le code qui permet de désigner de manière aléatoire les Civs dans les deux équipes.</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">        <span style="color:#719e07">for</span> i <span style="color:#719e07">in</span> <span style="color:#b58900">range</span>(<span style="color:#2aa198">0</span>,<span style="color:#2aa198">7</span>):
+            value<span style="color:#719e07">=</span>rd<span style="color:#719e07">.</span>randint(<span style="color:#2aa198">0</span>,<span style="color:#b58900">len</span>(liste_civ)<span style="color:#719e07">-</span><span style="color:#2aa198">1</span>)
+            equipe1<span style="color:#719e07">.</span>append(liste_civ[value])
+            liste_civ<span style="color:#719e07">.</span>remove(liste_civ[value])</code></pre></div>
+<p>Voici le code qui remove les civilizations qui vont être ban.</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">        <span style="color:#719e07">for</span> i <span style="color:#719e07">in</span> ban:
+            liste_civ<span style="color:#719e07">.</span>remove(i)</code></pre></div>
+<h2 id="todo">TODO</h2>
+<p>Pour la suite de se projet je compte rajouter un support pour <strong>Rise and Fall</strong> ainsi que <strong>Gathering storm</strong> avec un menu qui,
+permettra de selectionner les extensions majeurs du jeu.</p>
+<h3 id="todo-moins-important">TODO moins important</h3>
+<ul>
+<li>
+<p>changer les boutons pour qu'ils soit plus propre et montre une selection et pouvoir remove un ban.</p>
+</li>
+<li>
+<p>montrer les civs sélectionner.</p>
+</li>
+<li>
+<p>faire un code beaucoup plus propre.</p>
+</li>
+<li>
+<p>le publish sous forme .exe pour avoir une application native windows et linux.</p>
+</li>
+</ul></div>
+
+		<p class="meta">Posted on <span class="postdate">05. January 2020</span></p>
+	</article>
+
+			</div>
+
+			<footer id="footer">
+				<p class="copyright">
+					
+						Copyright 2019 @ Madstersogood
+					
+				</p>
+			</footer>
+		</div>
+
+		
+	</body>
+</html>

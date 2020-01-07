@@ -1,0 +1,22 @@
+title = "Madstersogood_Blog"
+BaseURL = "https://madstersogoo.github.io"
+theme = "solar-theme-hugo"
+publishDir = "Docs"
+paginate = 5
+pygmentsStyle = "solarized-dark" # solarized-light, -dark or -dark256
+copyright = "Copyright 2019 @ Madstersogood"
+
+[params]
+  scheme = "gray" # light, dark, gray or preference
+  description = "I use arch btw."
+
+[menu]
+  [[menu.main]]
+    name = "Feed"
+    url = "/index.xml"
+  [[menu.main]]
+    name = "Repository"
+    url = "https://github.com/madstersogoo"
+  [[menu.main]]
+    name = "Mastodon"
+    url = "https://mastodon.social/about"

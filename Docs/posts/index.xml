@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Madstersogood_Blog</title>
+    <link>https://madstersogoo.github.io/posts/</link>
+    <description>Recent content in Posts on Madstersogood_Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright 2019 @ Madstersogood</copyright>
+    <lastBuildDate>Sun, 05 Jan 2020 18:11:03 +0100</lastBuildDate>
+    
+	<atom:link href="https://madstersogoo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Civ6_Drafter</title>
+      <link>https://madstersogoo.github.io/posts/civ6_drafter/</link>
+      <pubDate>Sun, 05 Jan 2020 18:11:03 +0100</pubDate>
+      
+      <guid>https://madstersogoo.github.io/posts/civ6_drafter/</guid>
+      <description>&lt;h2 id=&#34;prsentation-du-projets-comment-lutiliser-et-modifier-son-code&#34;&gt;Présentation du Projets, Comment l&#39;utiliser et modifier son code.&lt;/h2&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
